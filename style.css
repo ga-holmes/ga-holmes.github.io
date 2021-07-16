@@ -4,7 +4,7 @@ html {
     min-height: 100%;
     margin: 0 auto;
     font-size: 16px;
-    background-color: #17486E;
+    background-color: #DADADA;
 }
 body {
     padding-top: 1%;
@@ -14,7 +14,7 @@ body {
 
     min-height: 100%;
     line-height: 1.75;
-    background-color: #87AAC4;
+    background-color: #DADADA;
 }
 
 a:link:hover {
@@ -24,14 +24,6 @@ a:link:hover {
     text-decoration: underline;
     cursor: pointer;
     cursor: hand;
-}
-
-#nValue {
-    max-width: 50px;
-}
-
-#rselect {
-    max-width: 130px;
 }
 
 input[type=submit], button {
