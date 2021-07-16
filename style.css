@@ -17,6 +17,10 @@ body {
     background-color: #DADADA;
 }
 
+header {
+  background-color: #AAAAAA;
+}
+
 a:link:hover {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
