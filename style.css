@@ -1,24 +1,24 @@
 html {
-    width: 70%;
-    height: 100%;
-    min-height: 100%;
     margin: 0 auto;
-    font-size: 16px;
-    background-color: #DADADA;
+    font-size: 46px;
 }
+
 body {
     padding-top: 1%;
-    padding-left: 3%;
-    padding-right: 3%;
     padding-bottom: 10%;
-
     min-height: 100%;
+    min-width: 100%;
     line-height: 1.75;
-    background-color: #DADADA;
+    background-color: #6e6e6e;
 }
 
-header {
-  background-color: #AAAAAA;
+#topBanner {
+
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background-color: rgb(172, 172, 172);
+
 }
 
 a:link:hover {
