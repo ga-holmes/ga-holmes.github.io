@@ -5,18 +5,163 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Garrett Holmes">
+    <style>
+        
+        a:link:hover {
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            cursor: hand;
+        }
 
+        input[type=submit], button {
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+            .bck{
+            background-attachment: scroll;
+            }
+        }
+        
+        html {
+            margin: 0 auto;
+            font-size: 18pt;
+        }
+        
+        body {
+            overflow-x: auto;
+            margin: 0;
+            max-width: 100%;
+        }
+        
+        .topBanner {
+            background-color: #6b9c7c;
+            text-justify: left;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 86pt;
+
+            overflow: hidden;
+            opacity: 0.6;
+            top: 0;
+            width: 100%;
+        }
+
+        .nav {
+            padding-left: 5%;
+            z-index: 1;
+            overflow: hidden;
+            background-color: #577e65;
+            width: 100%;
+        }
+
+        .nav a{
+            display: block;
+            float: left;
+            padding: 1%;
+            color: #ddd;
+            text-align: center;
+            text-decoration: none;
+            font-size: 32px;
+        }
+
+        .nav a:hover{
+            background: #88c09d;
+            color: 303030;
+        }
+
+        .stay {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .bck {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;   
+            overflow-x: hidden;         
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 1em;
+            margin: 56px;
+            color: black;
+
+            z-index: 0;
+        }
+        .wrapper > div{
+            background: #eee;
+            opacity: 0.8;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+
+        #projects_class {
+            color: #ddd;
+            margin: 56px;
+        }
+   
+        </style>
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Custom CSS End -->
 </head>
 <body>
-    <div id="topBanner">
-        <header>Garrett Holmes</header>
+    <div class="bck" style="background-image: url(media/back1.JPG);"> 
+        
+        <div class="topBanner">Garrett Holmes</div>   
+        <div class="nav" id="topBar">
+            <a href="index2.html">page 2</a>
+            <a href="index3.html">page 3</a>
+            <a href="index4.html" id="resumeLink">resume</a>
+        </div>
+        
+        <div class="wrapper" >
+            <div>
+                Garrett Holmes is a student at the University of Guelph in Ontario, Canada. He is working towards a Bachelors degree in Computing with a major in Computer Science & a minor in GIS & Environmental Analysis.
+            </div>
+            <div>
+                <h5>C</h5>
+                <h5>Java</h5>
+                <h5>Python</h5>
+            </div>
+        </div>
 
     </div>
+    <div class="bck" style="background-image: url(media/back2.jpg);">
+        <div id="projects_class">
+           <h1>Projects</h1>
+           <div class="wrapper">
+               <div>
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem veniam qui dolores consectetur, minus, tenetur consequuntur nihil doloremque reprehenderit quis aperiam alias excepturi dicta ex dolor sit. Ullam, ratione cupiditate!
+               </div>
+           </div>
+        </div>
+    </div>
 
-    <div style="background-image: url('back1.JPG');"></div>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var nav = document.getElementById("topBar");
+        var scrollamt = nav.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > scrollamt) {
+            nav.classList.add("stay");
+          } else {
+            nav.classList.remove("stay");
+          }
+        }
+        </script>
 
 </body>
 </html>
