@@ -5,65 +5,65 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Garrett Holmes">
+    <link rel="shortcut icon" href="media/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css" media=”screen” />
     <style>
+
+        body {
+            background-color: #c6d1c9;
+        }
+
         .wrapper{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1fr 2fr 1fr;
             grid-gap: 1em;
-            grid-auto-rows: minmax(100px, auto);
+            justify-items: stretch;
+            align-items: stretch;
+
         }
         .wrapper > div{
             background: #eee;
-            padding: 1em;
+            
         }
         .wrapper > div:nth-child(odd){
+            grid-template-columns: 1fr 2fr 1fr;
             background: #ddd;
         }
-        .nested{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-auto-rows: 70px;
-            grid-gap: 1em;
+
+        .galleryimg {
+            max-width: 100%;
+            max-height: 100%;
         }
-        .nested > div{
-            border: #333 1px solid;
-            padding: 1em;
-        }
+
     </style>
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Custom CSS End -->
 </head>
 <body>
+
+    <div class="nav" id="topBar">
+        <a href="gallery.html">gallery</a>
+        <a href="index3.html">page 3</a>
+        <a href="resume.html" id="resumeLink">resume</a>
+    </div>
+
     <div class="wrapper">
-        <div class="nested">
-            <div>
-                Lorem
-            </div>
-            <div>
-                Lorem
-            </div>
-            <div>
-                Lorem
-            </div>
-            <div>
-                Lorem
-            </div>
-            <div>
-                Lorem
-            </div>
+        
+        <div>
+            <img class="galleryimg" src="media/cocabike.jpg" alt="">
+            <img class="galleryimg" src="media/toronto.jpg" alt="">
         </div>
         <div>
-            Lorem ipsum do
+            <img class="galleryimg" src="media/darkforest.jpg" alt="">
         </div>
         <div>
-            Lorem ipsum too
+            <img class="galleryimg" src="media/raodbike.jpg" alt="">
+            <img class="galleryimg" src="media/dylansky.jpg" alt="">
         </div>
         <div>
-            Lorem ipsum do
         </div>
         <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi voluptatum, et voluptate voluptatibus minima, quaerat porro, maxime odit facilis nulla non optio recusandae accusamus quos repellendus! Quam recusandae fugiat, rem voluptate quidem consequuntur numquam. Culpa odit sed aspernatur dolor cupiditate.
         </div>
     </div>
 </body>
