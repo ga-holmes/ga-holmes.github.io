@@ -1,41 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CSS Grid</title>
+    <title>Holmes Hub - gallery</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Garrett Holmes">
-    <link rel="shortcut icon" href="media/favicon.ico">
+    <link rel="shortcut icon" href="media/fav.png">
     <link rel="stylesheet" type="text/css" href="style.css" media=”screen” />
+    
     <style>
-
         body {
             background-color: #c6d1c9;
         }
-
-        .wrapper{
-            display: grid;
-            grid-template-columns: 1fr 2fr 1fr;
-            grid-gap: 1em;
-            justify-items: stretch;
-            align-items: stretch;
-
-        }
-        .wrapper > div{
-            background: #eee;
-            
-        }
-        .wrapper > div:nth-child(odd){
-            grid-template-columns: 1fr 2fr 1fr;
-            background: #ddd;
-        }
-
-        .galleryimg {
-            max-width: 100%;
-            max-height: 100%;
-        }
-
     </style>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Custom CSS End -->
@@ -43,12 +21,11 @@
 <body>
 
     <div class="nav" id="topBar">
-        <a href="gallery.html">gallery</a>
-        <a href="index3.html">page 3</a>
-        <a href="resume.html" id="resumeLink">resume</a>
+        <a href="index.html">home</a>
+        <a href="/media/GarrettHolmes.pdf" id="resumeLink">resume</a>
     </div>
 
-    <div class="wrapper">
+    <div class="gwrapper">
         
         <div>
             <img class="galleryimg" src="media/cocabike.jpg" alt="">
@@ -61,9 +38,7 @@
             <img class="galleryimg" src="media/raodbike.jpg" alt="">
             <img class="galleryimg" src="media/dylansky.jpg" alt="">
         </div>
-        <div>
-        </div>
-        <div>
-        </div>
+
     </div>
+
 </body>
