@@ -2,9 +2,6 @@ import Image from 'next/image'
 
 import React from 'react';
 
-import backImage from '/public/images/back1.JPG'
-import backImage2 from '/public/images/back2.JPG'
-
 import FormatContainer from "/pages/components/FormatContainer";
 import Icons from "/pages/components/Icons";
 
@@ -55,14 +52,6 @@ const MainPage = () => {
 
     ]
 
-    const secondaryElements = [
-
-        <p key={1}>Filling These In...</p>
-        ,
-        <Image src="/images/fav.png" width={imageWidth} height={imageHeight} key={2} alt=''/>
-
-    ]
-
     return (
         <div className="App">
             <div className={mainStyle.topBanner}>
@@ -104,9 +93,21 @@ const MainPage = () => {
                 <div className={mainStyle.projectsclass}>
 
                     <h1>Projects</h1>
-                    <FormatContainer elements={secondaryElements} spacing='0em' />
-                    <FormatContainer elements={secondaryElements} spacing='0em' />
-                    <FormatContainer elements={secondaryElements} spacing='0em' />
+                    <FormatContainer elements={React.Children.toArray([
+                        <>
+                            <h3>this.this</h3>
+                            <p>This website is built on the Next.js framework for javascript, and is generated entirely with React.
+                                <br/>
+                                The /gallery route makes use of a Next.js api call to getImages.js. The call gets a list of file names
+                                 in the 'public/images/gallery' folder and sends them to the front end. The page then generates the layout 
+                                 that is seen on the page. Unfortunately (since this is hosted as a static page), none of this is currently functioning, 
+                                 along with other Next.js features like dynamically pre-rendering the pages on the server side.
+                            </p>
+                        </>
+                        ,
+                        <img src="/images/NextJS_Logo.jpg" className='imageDefault' key={2} alt='' />
+
+                    ])} spacing='0.5em' />
 
                 </div>
             </div>

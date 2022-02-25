@@ -1,6 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 
+// This page would normally be run if the site was not currently hosted on github pages (as a static page)
+
 export default async function handler(req, res){
 
     let dirPath = path.resolve('./public/images/gallery/')
@@ -10,8 +12,17 @@ export default async function handler(req, res){
         if (err) {
             return console.log("Problem scanning gallery directory: " + err);
         }
-        
-        res.status(200).json(JSON.stringify(files));
+
+        let fileNames = [];
+        files.forEach(function (file) {
+
+            let fileExt = file.split('.').pop().toLowerCase();
+            if (fileExt === "jpg" || fileExt === "png") {
+                fileNames.push(file);
+            }
+        });
+
+        res.status(200).json(JSON.stringify(fileNames));
 
     });
 
