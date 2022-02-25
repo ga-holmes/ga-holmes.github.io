@@ -1,0 +1,27 @@
+.nav {
+    padding-left: 5%;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #2c2c2c;
+    width: 100%;
+    max-height: 56px;
+
+    position: fixed;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav a{
+    display: block;
+    float: left;
+    padding: 1%;
+    color: #ddd;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav a:hover{
+    background: #88c09d;
+    color: 303030;
+}

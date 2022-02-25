@@ -1,0 +1,33 @@
+
+.wrapper {
+    display: grid;
+    margin: 5%;
+    color: black;
+
+    align-items: center;
+    
+    z-index: 0;
+}
+.wrapper > div{
+    background: #eee;
+    opacity: 0.8;
+    padding: 1em;
+}
+.wrapper > div:nth-child(odd){
+    background: #ddd;
+}
+
+/* reformat for mobile */
+@media only screen and (max-device-width: 1024px) {
+    
+    .wrapper > div:nth-child(even){
+        padding: 0.2em;
+    }
+
+    .wrapper > div:nth-child(odd){
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+}
+

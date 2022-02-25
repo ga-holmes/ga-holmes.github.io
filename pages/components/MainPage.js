@@ -1,0 +1,118 @@
+import Image from 'next/image'
+
+import React from 'react';
+
+import backImage from '/public/images/back1.JPG'
+import backImage2 from '/public/images/back2.JPG'
+
+import FormatContainer from "/pages/components/FormatContainer";
+import Icons from "/pages/components/Icons";
+
+import mainStyle from "/styles/MainPage.module.css";
+
+const MainPage = () => {
+
+    let imageWidth = '100%';
+    let imageHeight = '100%';
+
+    const icons = [
+        {
+            icon: "/images/github-logo.png",
+            text: "",
+            linkTo: 'https://github.com/ga-holmes'
+        },
+        {
+            icon: "/images/linkedin.png",
+            text: "",
+            linkTo: "https://www.linkedin.com/in/garrett-holmes-b4a219225/"
+        },
+        {
+            icon: "",
+            text: "Resume",
+            linkTo: "GarrettHolmesResume.pdf"
+        },
+    ]
+
+    // List of elements to be rendered on the home page
+    const homeElements = [
+
+        <div key={1}>
+            <p>Garrett Holmes is a student at the University of Guelph in Ontario, Canada. 
+                He is working towards a Bachelors degree in Computing with a major in Computer 
+                Science & a minor in GIS & Environmental Analysis. 
+                <br />
+                <br /> 
+                With a main focus on programming and software development using a variety of languages like 
+                C, Java, JavaScript, and Python, I enjoy writing interesting and challenging programs.
+                <br/>
+                I also practice music, photography, and 3D modelling / 2D animation using Blender.
+            </p>
+        </div>
+        ,
+        <div key={2}>
+            <img src='/images/self.jpg' alt='' className='imageDefault'/>
+        </div>
+
+    ]
+
+    const secondaryElements = [
+
+        <p key={1}>Filling These In...</p>
+        ,
+        <Image src="/images/fav.png" width={imageWidth} height={imageHeight} key={2} alt=''/>
+
+    ]
+
+    return (
+        <div className="App">
+            <div className={mainStyle.topBanner}>
+                <span>Garrett <span className={mainStyle.name}>Holmes</span></span>
+            </div>
+            <Icons linksList={icons} />
+
+            <div className={mainStyle.bck} style={{ background: '#69828c' }}>
+                <FormatContainer elements={homeElements} columns='2fr 1fr' spacing='1em' />
+            </div>
+            <div className={mainStyle.bck} id='experience' style={{ background: '#69829c' }}>
+                <div className={mainStyle.projectsclass}>
+
+                    <h1>Experience</h1>
+                    <FormatContainer elements={React.Children.toArray([
+                        
+                        <>
+                            <a href='https://www.kandalore.com/'><h3>Camp Kandalore</h3></a>
+                            <p>At Kandalore, where I worked in the summers of 2019 and 2021, my main role was guiding canoe trips
+                                with groups of up to 10 campers lasting from 3 to 7 days in length. The main focus on these trips was 
+                                creating a welcoming and educational environment where campers could learn and grow.
+                                    <br />
+                                    <br />
+                                In the summer of 2021 I ran a 7 day trip down the spanish river, navigating long lakes, portages, and whitewater sets.
+                                    <br />
+                                    <br />
+                                Meanwhile in camp, I had an actve role in organizing the trip centre, where all our trip gear/maps/etc. 
+                                was kept, as well as fixing boats before and after they were on trips. </p>
+                        </>
+                        ,
+                        <img src="/images/tripcentre.JPG" className='imageDefault' alt='' key={2}/>
+
+                    ])} spacing='0.5em' />
+
+                </div>
+            </div>
+
+            <div className={mainStyle.bck} id='projects' style={{ background: '#6982ac' }}>
+                <div className={mainStyle.projectsclass}>
+
+                    <h1>Projects</h1>
+                    <FormatContainer elements={secondaryElements} spacing='0em' />
+                    <FormatContainer elements={secondaryElements} spacing='0em' />
+                    <FormatContainer elements={secondaryElements} spacing='0em' />
+
+                </div>
+            </div>
+
+        </div>
+    );
+}
+
+export default MainPage
