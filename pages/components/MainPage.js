@@ -99,7 +99,7 @@ const MainPage = () => {
                             <p>This website is built on the Next.js framework for javascript, and is generated entirely with React.
                                 <br/>
                                 The /gallery route makes use of a Next.js api call to getImages.js. The call gets a list of file names
-                                 in the 'public/images/gallery' folder and sends them to the front end. The page then generates the layout 
+                                 in the public/images/gallery folder and sends them to the front end. The page then generates the layout 
                                  that is seen on the page. Unfortunately (since this is hosted as a static page), none of this is currently functioning, 
                                  along with other Next.js features like dynamically pre-rendering the pages on the server side.
                             </p>
