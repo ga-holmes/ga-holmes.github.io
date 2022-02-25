@@ -12,9 +12,9 @@ const Icons = ({ linksList }) => {
                 linksList.map(
                     (link) => (
                         link.icon === '' ? 
-                            <a key={link.key} href={link.linkTo} className={iconStyle.noIcon}>{link.text}</a>
+                            <a key={link.key} href={link.linkTo} className={iconStyle.noIcon} target='_blank' rel='noreferrer'>{link.text}</a>
                         :
-                            <a key={link.key} href={link.linkTo} style={{ textDecoration: 'none' }}> <img className={iconStyle.icon} src={link.icon} alt='' /> </a>
+                            <a key={link.key} href={link.linkTo} style={{ textDecoration: 'none' }} target='_blank' rel='noreferrer'> <img className={iconStyle.icon} src={link.icon} alt='' /> </a>
                     )
                 )
             )}
