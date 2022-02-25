@@ -3,7 +3,7 @@ const path = require("path");
 
 export default async function handler(req, res){
 
-    let dirPath = path.resolve('../site/public/images/gallery/')
+    let dirPath = path.resolve('./public/images/gallery/')
 
     fs.readdir(dirPath, function (err, files) {
 
