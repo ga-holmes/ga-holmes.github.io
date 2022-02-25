@@ -10,17 +10,8 @@ export default async function handler(req, res){
         if (err) {
             return console.log("Problem scanning gallery directory: " + err);
         }
-
-        let fileNames = [];
-        files.forEach(function (file) {
-
-            let fileExt = file.split('.').pop().toLowerCase();
-            if (fileExt === "jpg" || fileExt === "png") {
-                fileNames.push(file);
-            }
-        });
-
-        res.status(200).json(JSON.stringify(fileNames));
+        
+        res.status(200).json(JSON.stringify(files));
 
     });
 
