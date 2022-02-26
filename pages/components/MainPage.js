@@ -107,6 +107,23 @@ const MainPage = () => {
                         <img src="/images/NextJS_Logo.jpg" className='imageDefault' key={2} alt='' />
 
                     ])} spacing='0.5em' />
+                    <FormatContainer elements={React.Children.toArray([
+                        <>
+                            <h3>Modding Skyrim</h3>
+                            <p>Skyrim is a popular open-world fantasy game that has had an extremely popular modding comminity since the games release in 2011.
+                                <br/>
+                                Currently I am working on a mod that introduces a new quest, a small new environment to explore, and a new dungeon.
+                                This process involves hand-making a new landmass, bulding rooms, environments, cave systems using the tools in the skyrim creation kit.
+                                As well as writing event based scripts in the papyrus language and dealing with object, object placement, enemies, character properties, etc.
+                                <br/>
+                                Over a number fo years I released several (mostly silly) mods, which can be viewed or downloaded 
+                                <a href='https://www.nexusmods.com/skyrim/users/23367519' target='_blank' rel='noreferrer' style={{color: 'blue'}}> here.</a>
+                            </p>
+                        </>
+                        ,
+                        <img src="/images/modimage.jpg" className='imageDefault' key={2} alt='' />
+
+                    ])} spacing='0.5em' />
 
                 </div>
             </div>
