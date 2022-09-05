@@ -1,0 +1,26 @@
+.icon {
+    height: 50px;
+    width: auto;
+}
+
+.container {
+
+    background-color: #698C82;
+
+    filter: drop-shadow(-1px 4px 2px);
+
+    display: flex;
+    overflow: hidden;
+}
+
+.container a {
+    opacity: 2;
+    float: left;
+    top: 0%;
+}
+
+.noIcon {
+    float: right;
+    align-self: center;
+    font-family: 'Courier New', Courier, monospace;
+}
