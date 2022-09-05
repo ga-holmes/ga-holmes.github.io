@@ -8,6 +8,8 @@ import Nav from "./components/Nav";
 
 import { Route, BrowserRouter as Router , Routes } from 'react-router-dom';
 
+import navScroll from "./script";
+
 function App() {
 
   const [links] = useState([

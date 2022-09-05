@@ -19,8 +19,13 @@
     top: 0%;
 }
 
+.container a:hover {
+    background: #88c09d;
+    color: 303030;
+}
+
 .noIcon {
     float: right;
     align-self: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
 }
