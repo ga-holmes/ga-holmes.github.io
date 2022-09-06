@@ -5,11 +5,12 @@ import backImage from "../images/back1.JPG"
 import backImage2 from "../images/back2.jpg"
 
 import FormatContainer from "../components/FormatContainer";
-import Icons from "../components/Icons";
 
 import "../styles/MainPage.css";
 
 import home from "../home.js"
+
+import Icons from '../components/Icons';
 
 const MainPage = () => {
 
@@ -17,9 +18,11 @@ const MainPage = () => {
         <div className="App">
 
             <div className="topBanner" style={{ backgroundImage: `url(${backImage})` }}/>
-            
-            <Icons linksList={home.icons}/>
-            
+
+            <div id="icons">
+                <Icons linksList={home.icons} />
+            </div>
+                        
             <FormatContainer elements={home.homeElements} columns='2fr 1fr' spacing='1em' />
 
             <div className="bck" id='experience' style={{ backgroundImage: `url(${backImage2})` }}>

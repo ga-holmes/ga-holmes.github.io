@@ -1,6 +1,5 @@
 .icon {
     height: 50px;
-    width: auto;
 }
 
 .container {
@@ -9,14 +8,12 @@
 
     filter: drop-shadow(-1px 4px 2px);
 
-    display: flex;
     overflow: hidden;
-}
+    
+    z-index: 1;
+    width: 100%;
+    max-height: 10%;
 
-.container a {
-    opacity: 2;
-    float: left;
-    top: 0%;
 }
 
 .container a:hover {
@@ -25,7 +22,8 @@
 }
 
 .noIcon {
-    float: right;
-    align-self: center;
+    float: left;
     font-size: x-large;
+    margin-left: 1%;
+    height: 100%;
 }

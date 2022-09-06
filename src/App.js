@@ -1,42 +1,34 @@
-import { useState } from "react";
+import { useEffect } from "react";
 
 import MainPage from "./pages/MainPage";
 import Gallery from "./pages/Gallery";
 import NoPage from "./pages/NoPage";
 
-import Nav from "./components/Nav";
-
 import { Route, BrowserRouter as Router , Routes } from 'react-router-dom';
 
 import navScroll from "./script";
 
+import { useLocation } from "react-router-dom";
+
+import home from "./home";
+
+import Icons from "./components/Icons";
+
 function App() {
 
-  const [links] = useState([
+  const location = useLocation();
 
-    {
-      text: 'Home',
-      linkTo: '/#'
-    },
-    {
-      text: 'Gallery',
-      linkTo: '/gallery'
-    },
-    {
-      text: 'Experience',
-      linkTo: '/#experience'
-    },
-    {
-      text: 'Projects',
-      linkTo: '/#projects'
-    },
-  ])
+  useEffect(() => {
+    navScroll()
+  }, [location])
+  
 
   return (
     <div>
-      <Router>
 
-        <Nav linksList={links} />
+        <div id="nav">
+          <Icons linksList={home.icons} style={{position: 'fixed', display: 'block'}}/>
+        </div>
 
         <Routes>
 
@@ -46,7 +38,6 @@ function App() {
 
         </Routes>
 
-      </Router>
     </div>
   );
 }

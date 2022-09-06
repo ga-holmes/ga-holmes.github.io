@@ -1,10 +1,20 @@
 
 function navScroll(e) {
 
-    // let scrollPos = document.body.scrollTop;
+    let scrollPos = window.scrollY;
 
-    // document.getElementsByClassName("nav").style.bottom = scrollPos
-    console.log("bruh");
+    let icons = document.getElementById("icons")
+    let nav = document.getElementById("nav")
+
+    if (scrollPos / window.screen.height < icons.offsetTop / window.screen.height) {
+        nav.style.display = 'none'
+    }
+
+    if (icons === null || scrollPos / window.screen.height >= icons.offsetTop / window.screen.height) {
+        nav.style.display = 'block'
+    }
+
+    console.log(icons.offsetTop);
 
 }
 

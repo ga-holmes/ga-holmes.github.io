@@ -4,22 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-function navScroll(e) {
+import navScroll from './script'
 
-  // let scrollPos = document.body.scrollTop;
-
-  // document.getElementsByClassName("nav").style.bottom = scrollPos
-  console.log("bruh");
-
-}
+import {BrowserRouter as Router} from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root'),
-  document.getElementById('root').addEventListener('scroll', navScroll)
+  document.addEventListener('scroll', navScroll)
 );
+
+navScroll();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -82,6 +82,11 @@ const home = {
             text: "G A R R E T T _ H O L M E S",
             linkTo: "/"
         },
+        {
+            icon: "",
+            text: "gallery",
+            linkTo: "/gallery"
+        }
     ]
 }
 

@@ -1,5 +1,7 @@
 import React from 'react'
 import '../styles/Icons.css'
+import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 const Icons = ({ linksList, style }) => {
 
@@ -10,9 +12,9 @@ const Icons = ({ linksList, style }) => {
                 linksList.map(
                     (link) => (
                         link.icon === '' ? 
-                            <a key={link.key} href={link.linkTo} className="noIcon" target='_blank' rel='noreferrer'>{link.text}</a>
+                            link.linkTo.includes("#") ? <HashLink to={link.linkTo} className="noIcon">{link.text}</HashLink> : <Link to={link.linkTo} className="noIcon">{link.text}</Link>
                         :
-                            <a key={link.key} href={link.linkTo} style={{ textDecoration: 'none' }} target='_blank' rel='noreferrer'> <img className="icon" src={link.icon} alt='' /> </a>
+                            <a key={link.key} href={link.linkTo} style={{ textDecoration: 'none', float: 'right' }} target='_blank' rel='noreferrer'> <img className="icon" src={link.icon} alt='' /> </a>
                     )
                 )
             )}
