@@ -1,28 +1,31 @@
-import React from 'react';
-import '../styles/Nav.css';
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+import React from 'react'
+import '../styles/Nav.css'
+import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
-const Nav = ({ linksList }) => {
-  return (
-    <div className="nav">
+const Nav = ({ linksList, style }) => {
 
-        {
-        React.Children.toArray(
-          linksList.map(
-            (link) => (
-              link.linkTo.includes("#") ? <HashLink to={link.linkTo}>{link.text}</HashLink> : <Link to={link.linkTo}>{link.text}</Link>
-            )
-        )
-        )}
+    return (
+        <div className="container" style={style} >
 
-    </div>
-  )
+            {React.Children.toArray(
+                linksList.map(
+                    (link) => (
+                        link.icon === '' ? 
+                            link.linkTo.includes("#") ? <HashLink to={link.linkTo} className="noIcon">{link.text}</HashLink> : <Link to={link.linkTo} className="noIcon">{link.text}</Link>
+                        :
+                            <a key={link.key} href={link.linkTo} style={{ textDecoration: 'none', float: 'right' }} target='_blank' rel='noreferrer'> <img className="icon" src={link.icon} alt='' /> </a>
+                    )
+                )
+            )}
+
+        </div>
+    )
 }
 
 Nav.defaultProps = {
 
-  linksList: []
+    linksList: []
 
 }
 

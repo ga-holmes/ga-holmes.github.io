@@ -1,27 +1,29 @@
-.nav {
-    padding-left: 5%;
-    z-index: 1;
+.icon {
+    height: 50px;
+}
+
+.container {
+
+    background-color: #698C82;
+
+    filter: drop-shadow(-1px 4px 2px);
+
     overflow: hidden;
-    background-color: #2c2c2c;
+    
+    z-index: 1;
     width: 100%;
     max-height: 10%;
 
-    position: fixed;
-    /* bottom: 0%; */
-
 }
 
-.nav a{
-    display: block;
-    float: left;
-    padding: 1%;
-    color: #ddd;
-    text-align: center;
-    text-decoration: none;
-    font-size: 24px;
-}
-
-.nav a:hover{
+.container a:hover {
     background: #88c09d;
     color: 303030;
+}
+
+.noIcon {
+    float: left;
+    font-size: x-large;
+    margin-left: 1%;
+    height: 100%;
 }

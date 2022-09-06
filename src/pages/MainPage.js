@@ -3,6 +3,7 @@ import React from 'react';
 
 import backImage from "../images/back1.JPG"
 import backImage2 from "../images/back2.jpg"
+import backImage3 from "../images/self.jpg"
 
 import FormatContainer from "../components/FormatContainer";
 
@@ -10,7 +11,7 @@ import "../styles/MainPage.css";
 
 import home from "../home.js"
 
-import Icons from '../components/Icons';
+import Nav from '../components/Nav';
 
 const MainPage = () => {
 
@@ -20,10 +21,12 @@ const MainPage = () => {
             <div className="topBanner" style={{ backgroundImage: `url(${backImage})` }}/>
 
             <div id="icons">
-                <Icons linksList={home.icons} />
+                <Nav linksList={home.icons} />
             </div>
-                        
-            <FormatContainer elements={home.homeElements} columns='2fr 1fr' spacing='1em' />
+            
+            <div className='bck' style={{ backgroundImage: `url(${backImage3})` }}>
+                <FormatContainer elements={home.homeElements} columns='2fr 1fr' spacing='1em' />
+            </div>
 
             <div className="bck" id='experience' style={{ backgroundImage: `url(${backImage2})` }}>
                 <div className="projectsclass">
