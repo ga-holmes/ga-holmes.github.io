@@ -28,11 +28,25 @@ const MainPage = () => {
                 <FormatContainer elements={home.homeElements} columns='2fr 1fr' spacing='1em' />
             </div>
 
+            <div className="bck" id='projects' style={{ backgroundImage: `url(${backImage2})` }}>
+                <div className="projectsclass">
+
+                    <h1>Code</h1>
+                    <div key={1}>
+                        <h5 style={{ textAlign: 'center' }}>I enjoy solving insteresting problems. My goal always is to create software
+                            that can help people & solve real world problems.
+                        </h5>
+                    </div>
+                    <FormatContainer elements={home.softwareElements} spacing='0.5em' />
+
+                </div>
+            </div>
+
             <div className="bck" id='experience' style={{ backgroundImage: `url(${backImage2})` }}>
                 <div className="projectsclass">
 
-                    <h1>Software</h1>
-                    <FormatContainer elements={home.softwareElements} spacing='0.5em' />
+                    <h1>Experience</h1>
+                    <FormatContainer elements={home.experienceElements} spacing='0.5em' />
 
                 </div>
             </div>

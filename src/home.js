@@ -1,6 +1,7 @@
+// List of elements to be rendered on the home page
+// Serves as a single location to store text & other information that will be used by the site - essentially a makeshift static database in concept
 const home = {
 
-    // List of elements to be rendered on the home page
     homeElements: [
     
         <div key={1}>
@@ -25,14 +26,24 @@ const home = {
     
     ], softwareElements: [
 
-        <div key={1}>
-            <h5 style={{textAlign: 'center'}}>With experience programming since the 8th grade, I enjoy solving insteresting problems. My goal always is to create software 
-                that can help people & solve real world problems.
-            </h5>
-
+        <div key={2}>
+            <h3><a href="https://csl.uwaterloo.ca/">Collaborative Systems Laboratory</a></h3>
+            <p>
+                As an Undergraduate Research Assistant, I explored recent literature in Precision Livestock Farming 
+                with specific regard to computer vision and remote sensing techniques for automatic detection of cattle 
+                on pastures and in feedlots. My research led to the independent development of software that could detect 
+                the presence of cattle in watering pens after training on a labeled dataset. The script used PyTorch and 
+                OpenCV to parse video files and automatically create sub-clips and output labels in a format that could 
+                then be used to further train the model. I worked closely with the Resnet, YOLO, and Mask-R-CNN computer vision models.
+            </p>
+        </div>
+        ,
+        <img src="/media/58.jpg" className='imageDefault' alt='' key={4} />
+        ,
+        <div key={3}>
             <h3>Web</h3>
             <p>
-                I've worked on numerous web applications using various different tools. As an excercise using basic tools I built a website on HTML & JQuery 
+                I've worked on numerous web applications with a variety of different tools. As an excercise using basic tools I built a website on HTML & JQuery 
                 that could interface with a C program & a backend using MariaDB.
                 <br />
                 <br />
@@ -41,7 +52,8 @@ const home = {
             </p>
         </div>
         ,
-        <img src="/media/tripcentre.JPG" className='imageDefault' alt='' key={2} />
+        <img src="/media/react-cover.png" className='imageDefault' alt='' key={4} />
+        ,
 
     ],
     experienceElements: [
@@ -64,7 +76,12 @@ const home = {
     
     ],
     projectsElements: [
-            <img src="/media/modimage.jpg" className='imageDefault' key={1} alt='' />
+        <div>
+            Composer - Sole of a Salesman by Lliam Bittle
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/OOtX7AmzdAA" title="Sole Of A Salesman" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        ,
+        <img src="/media/modimage.jpg" className='imageDefault' key={1} alt='' />
     ],
     icons: [
         {
