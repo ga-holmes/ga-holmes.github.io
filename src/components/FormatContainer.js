@@ -3,7 +3,7 @@ import '../styles/FormatContainer.css';
 
 const FormatContainer = ({ columns,spacing,elements }) => {
   return (
-    <div className="wrapper" style={{ gridTemplateColumns: columns, gridGap: spacing }}>
+    <div className="wrapper" style={{ gridTemplateColumns: columns, gridGap: spacing}}>
         
       {
         React.Children.toArray(

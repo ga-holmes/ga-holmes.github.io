@@ -10,23 +10,47 @@
 }
 .wrapper > div{
     background: #eee;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     padding: 1em;
+
+    border-radius: 2%;
 }
 .wrapper > div:nth-child(odd){
     background: #ddd;
 }
 
+.video{
+    width: 50vw;
+    height: 50vh;
+}
+
 /* reformat for mobile */
 @media only screen and (max-device-width: 1024px) {
     
-    .wrapper > div:nth-child(even){
+    .wrapper {
+        display: block;
+    }
+
+    .wrapper>div {
+        background: #ddd;
+        /* opacity: 0.8; */
+        padding: 1em;
+
+        border-radius: 0%;
+    }
+
+    /* .wrapper > div:nth-child(even){
         padding: 0.2em;
     }
 
     .wrapper > div:nth-child(odd){
         grid-column-start: 1;
         grid-column-end: 3;
+    } */
+
+    .video {
+        width: auto;
+        height: auto;
     }
 
 }

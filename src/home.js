@@ -28,6 +28,7 @@ const home = {
 
         <div key={2}>
             <h3><a href="https://csl.uwaterloo.ca/">Collaborative Systems Laboratory</a></h3>
+            <img src="/media/58.jpg" className='imageDefault' alt='' key={4} />
             <p>
                 As an Undergraduate Research Assistant, I explored recent literature in Precision Livestock Farming 
                 with specific regard to computer vision and remote sensing techniques for automatic detection of cattle 
@@ -38,10 +39,10 @@ const home = {
             </p>
         </div>
         ,
-        <img src="/media/58.jpg" className='imageDefault' alt='' key={4} />
-        ,
+        
         <div key={3}>
             <h3>Web</h3>
+            <img src="/media/react-cover.png" className='imageDefault' alt='' key={4} />
             <p>
                 I've worked on numerous web applications with a variety of different tools. As an excercise using basic tools I built a website on HTML & JQuery 
                 that could interface with a C program & a backend using MariaDB.
@@ -52,12 +53,11 @@ const home = {
             </p>
         </div>
         ,
-        <img src="/media/react-cover.png" className='imageDefault' alt='' key={4} />
-        ,
 
     ],
     experienceElements: [
-    
+        <img src="/media/tripcentre.JPG" className='imageDefault' alt='' key={2} />
+    ,
         <div key={1}>
             <a href='https://www.kandalore.com/'><h3>Camp Kandalore</h3></a>
             <p>At Kandalore, where I worked in the summers of 2019 and 2021, my main role was guiding canoe trips
@@ -72,16 +72,15 @@ const home = {
                 was kept, as well as fixing boats before and after they were on trips. </p>
         </div>
         ,
-        <img src="/media/tripcentre.JPG" className='imageDefault' alt='' key={2} />
     
     ],
     projectsElements: [
         <div>
-            Composer - Sole of a Salesman by Lliam Bittle
-            <iframe width="1280" height="720" src="https://www.youtube.com/embed/OOtX7AmzdAA" title="Sole Of A Salesman" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4>Composer - <a href="https://letterboxd.com/film/sole-of-a-salesman/">Sole of a Salesman by Lliam Bittle</a></h4>
+            <iframe className="video" src="https://www.youtube.com/embed/OOtX7AmzdAA" title="Sole Of A Salesman" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         ,
-        <img src="/media/modimage.jpg" className='imageDefault' key={1} alt='' />
+        <p>Independent short film soundtrack, written and produced using a variety of digital instruments as well as recorded instruments.</p>
     ],
     icons: [
         {
@@ -97,7 +96,22 @@ const home = {
         {
             icon: "",
             text: "G A R R E T T _ H O L M E S",
-            linkTo: "/"
+            linkTo: "/#start"
+        },
+        {
+            icon: "",
+            text: "code",
+            linkTo: "/#code"
+        },
+        {
+            icon: "",
+            text: "experience",
+            linkTo: "/#experience"
+        },
+        {
+            icon: "",
+            text: "projects",
+            linkTo: "/#projects"
         },
         {
             icon: "",

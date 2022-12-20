@@ -23,7 +23,7 @@ a:link:hover {
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: underline;
     cursor: hand;
 }
 

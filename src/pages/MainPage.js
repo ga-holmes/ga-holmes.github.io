@@ -18,7 +18,7 @@ const MainPage = () => {
     return (
         <div className="App">
 
-            <div className="topBanner" style={{ backgroundImage: `url(${backImage})` }}/>
+            <div className="topBanner" id="start" style={{ backgroundImage: `url(${backImage})` }}/>
 
             <div id="icons">
                 <Nav linksList={home.icons} />
@@ -28,12 +28,12 @@ const MainPage = () => {
                 <FormatContainer elements={home.homeElements} columns='2fr 1fr' spacing='1em' />
             </div>
 
-            <div className="bck" id='projects' style={{ backgroundImage: `url(${backImage2})` }}>
+            <div className="bck" id='code' style={{ backgroundImage: `url(${backImage2})` }}>
                 <div className="projectsclass">
 
-                    <h1>Code</h1>
-                    <div key={1}>
-                        <h5 style={{ textAlign: 'center' }}>I enjoy solving insteresting problems. My goal always is to create software
+                    <div style={{ backgroundColor: "#4449", paddingLeft: "1em", paddingBottom: "0.1em", paddingTop: "0.1em", borderRadius: "5%" }}>
+                        <h1>Code</h1>
+                        <h5 style={{ textAlign: 'left' }}>I enjoy solving insteresting problems. My goal always is to create software
                             that can help people & solve real world problems.
                         </h5>
                     </div>

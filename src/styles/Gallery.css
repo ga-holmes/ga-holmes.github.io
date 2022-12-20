@@ -9,20 +9,30 @@
     grid-gap: 1em;
     justify-items: stretch;
     align-items: center;
+}
 
-}
-.gwrapper > div{
-    background:rgb(180, 190, 205);;
+/* .gwrapper > div{
     
-}
+} */
 .gwrapper > div:nth-child(4){
     grid-template-columns: 2fr 1fr 2fr;
-    background: rgb(200, 210, 225);;
 }
 
 .galleryimg {
     max-width: 100%;
     max-height: 100%;
+    
+    border-radius: 3%;
+}
+
+.galleryimg:hover {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    
+    box-shadow: 0px 0px 10px #ddd;
+    max-width: 101%;
+    max-height: 101%;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
