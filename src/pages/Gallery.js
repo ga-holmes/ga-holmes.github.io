@@ -21,6 +21,8 @@ const Gallery = () => {
               "back2.jpg"
   ];
 
+  files = shuffleArray(files);
+
   const images = [];
 
   // generate gallery layout (2 images/one image)
@@ -45,14 +47,16 @@ const Gallery = () => {
   }
 
   return (
-    <div className="gwrapper">
-      {React.Children.toArray(
-        images.map(
-          (file) => (
-            file
+    <div>
+      <div className="gwrapper">
+        {React.Children.toArray(
+          images.map(
+            (file) => (
+              file
+            )
           )
-        )
-      )}
+        )}
+      </div>
     </div>
   )
 }
@@ -62,5 +66,21 @@ const Gallery = () => {
 //   files: []
 
 // }
+
+
+// from: https://www.geeksforgeeks.org/how-to-shuffle-an-array-using-javascript/
+function shuffleArray(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+  
+      // Generate random number
+      var j = Math.floor(Math.random() * (i + 1));
+                  
+      var temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+  }
+      
+  return array;
+}
 
 export default Gallery;
