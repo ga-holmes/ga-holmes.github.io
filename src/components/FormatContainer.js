@@ -21,7 +21,7 @@ const FormatContainer = ({ columns,spacing,elements }) => {
 FormatContainer.defaultProps = {
 
     spacing: '1em',
-    columns: '2fr 1fr',
+    columns: '1fr 1fr',
     count: 2,
     elements: []
 

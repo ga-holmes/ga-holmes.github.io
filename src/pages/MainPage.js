@@ -31,13 +31,13 @@ const MainPage = () => {
             <div className="bck" id='code' style={{ backgroundImage: `url(${backImage2})` }}>
                 <div className="projectsclass">
 
-                    <div style={{ backgroundColor: "#4449", paddingLeft: "1em", paddingBottom: "0.1em", paddingTop: "0.1em", borderRadius: "5%" }}>
+                    <div style={{ backgroundColor: "#4449", paddingLeft: "1em", paddingRight: "1em", paddingBottom: "0.1em", paddingTop: "0.1em", borderRadius: "5%" }}>
                         <h1>Code</h1>
                         <h5 style={{ textAlign: 'left' }}>I enjoy solving insteresting problems. My goal always is to create software
                             that can help people & solve real world problems.
                         </h5>
                     </div>
-                    <FormatContainer elements={home.softwareElements} spacing='0.5em' />
+                    <FormatContainer elements={home.softwareElements} spacing='0.5em' columns='1fr'/>
 
                 </div>
             </div>

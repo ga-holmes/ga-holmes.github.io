@@ -9,19 +9,14 @@
     z-index: 0;
 }
 .wrapper > div{
-    background: #eee;
+    background: #eeec;
     /* opacity: 0.8; */
     padding: 1em;
 
     border-radius: 2%;
 }
 .wrapper > div:nth-child(odd){
-    background: #ddd;
-}
-
-.video{
-    width: 50vw;
-    height: 50vh;
+    background: #fffc;
 }
 
 /* reformat for mobile */
@@ -50,6 +45,7 @@
 
     .video {
         width: auto;
+        max-width: 100%;
         height: auto;
     }
 

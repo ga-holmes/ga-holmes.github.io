@@ -12,13 +12,13 @@
     
     z-index: 10;
     width: 100%;
-    max-height: 10%;
 
 }
 
 .container a:hover {
     background: #88c09d;
     color: 303030;
+    text-decoration: none;
 }
 
 .noIcon {
