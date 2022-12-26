@@ -18,7 +18,14 @@ const Gallery = () => {
               "spanish3.jpg",
               "toronto.jpg",
               "back1.JPG",
-              "back2.jpg"
+              "back2.jpg",
+              "beech.jpg",
+              "clouds.jpg",
+              "cotty.jpg",
+              "fall.jpg",
+              "sil.JPG",
+              "uke.jpg",
+              "waves.jpg"
   ];
 
   files = shuffleArray(files);

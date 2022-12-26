@@ -76,11 +76,18 @@ const home = {
     ],
     projectsElements: [
         <div>
-            <h4>Composer - <a href="https://letterboxd.com/film/sole-of-a-salesman/">Sole of a Salesman by Lliam Bittle</a></h4>
+            <h4>Composer - <a href="https://letterboxd.com/film/sole-of-a-salesman/">'Sole of a Salesman' by Lliam Bittle</a></h4>
             <iframe className="video" src="https://www.youtube.com/embed/OOtX7AmzdAA" title="Sole Of A Salesman" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         ,
         <p>Independent short film soundtrack, written and produced using a variety of digital instruments as well as recorded instruments.</p>
+        ,
+        <div>
+            <h4>Personal Project - 'some lines'</h4>
+            <iframe className="video" src="https://www.youtube.com/embed/6oY2tPwBhj0" title="some lines" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        ,
+        <p>Hand drawn animation with original music. Created in Blender.</p>
     ],
     icons: [
         {
