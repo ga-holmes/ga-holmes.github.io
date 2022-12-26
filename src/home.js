@@ -40,19 +40,19 @@ const home = {
         </div>
         ,
         
-        <div key={3}>
-            <h3>Web</h3>
-            <img src="/media/react-cover.png" className='imageDefault' alt='' key={4} />
-            <p>
-                I've worked on numerous web applications with a variety of different tools. As an excercise using basic tools I built a website on HTML & JQuery 
-                that could interface with a C program & a backend using MariaDB.
-                <br />
-                <br />
-                Using Python, Flask, & React, I worked in a small team to build a web utility that can search, & view UoGuelph & Carelton courses & their prerequisites 
-                by bachelor program, major, minor, etc. with a detailed graphing functionality using <a href="https://reactflow.dev/" style={{textDecoration: 'underline'}}>React Flow</a>.
-            </p>
-        </div>
-        ,
+        // <div key={3}>
+        //     <h3>Web</h3>
+        //     <img src="/media/react-cover.png" className='imageDefault' alt='' key={4} />
+        //     <p>
+        //         I've worked on numerous web applications with a variety of different tools. As an excercise using basic tools I built a website on HTML & JQuery 
+        //         that could interface with a C program & a backend using MariaDB.
+        //         <br />
+        //         <br />
+        //         Using Python, Flask, & React, I worked in a small team to build a web utility that can search, & view UoGuelph & Carelton courses & their prerequisites 
+        //         by bachelor program, major, minor, etc. with a detailed graphing functionality using <a href="https://reactflow.dev/" style={{textDecoration: 'underline'}}>React Flow</a>.
+        //     </p>
+        // </div>
+        // ,
 
     ],
     experienceElements: [
@@ -92,6 +92,11 @@ const home = {
             icon: process.env.PUBLIC_URL + "/media/linkedin.png",
             text: "",
             linkTo: "https://www.linkedin.com/in/garrett-holmes-b4a219225/"
+        },
+        {
+            icon: process.env.PUBLIC_URL + "/media/resume.png",
+            text: "",
+            linkTo: "/media/GarrettHolmesResume.pdf"
         },
         {
             icon: "",
