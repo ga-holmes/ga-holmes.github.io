@@ -2,15 +2,14 @@
 /* gallery */
 .gwrapper{
     
-    padding-top: 10%;
-
+    padding-top: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 0.5em;
     justify-items: stretch;
     align-items: center;
-    margin-left: 2%;
-    margin-right: 2%;
+    /* margin-left: 2%;
+    margin-right: 2%; */
 }
 
 /* .gwrapper > div{
@@ -24,7 +23,7 @@
     max-width: 100%;
     max-height: 100%;
     
-    border-radius: 2%;
+    border-radius: 0.5%;
 }
 
 .galleryimg:hover {
@@ -43,7 +42,7 @@
     .gwrapper {
         grid-template-columns: 1fr;
         grid-gap: 0em;
-        padding-top: 15vh;
+        padding-top: 50px;
         margin-left: 0%;
         margin-right: 0%;
     }

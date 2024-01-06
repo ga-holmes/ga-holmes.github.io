@@ -14,7 +14,7 @@ const Nav = ({ linksList, style }) => {
                         link.icon === '' ? 
                             link.linkTo.includes("#") ? <HashLink to={link.linkTo} className="noIcon">{link.text}</HashLink> : <Link to={link.linkTo} className="noIcon">{link.text}</Link>
                         :
-                            <a key={link.key} href={link.linkTo} style={{ textDecoration: 'none', float: 'right' }} target='_blank' rel='noreferrer'> <img className="icon" src={link.icon} alt='' /> </a>
+                            <a className="hasIcon" key={link.key} href={link.linkTo} target='_blank' rel='noreferrer'> <img className="icon" src={link.icon} alt='' /> </a>
                     )
                 )
             )}

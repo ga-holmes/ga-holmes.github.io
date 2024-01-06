@@ -6,24 +6,34 @@
 
     background-color: #698C82;
 
-    filter: drop-shadow(-1px 4px 2px);
-
+    filter: drop-shadow(-1px 4px 1px);
     overflow: hidden;
     
     z-index: 10;
     width: 100%;
 
+    display: flex;
+    align-items: center;
+
 }
 
 .container a:hover {
-    background: #88c09d;
-    color: 303030;
     text-decoration: none;
 }
 
 .noIcon {
-    float: left;
     font-size: x-large;
     margin-left: 1%;
-    height: 100%;
+}
+
+.noIcon:hover {
+    color: #dedede;
+}
+
+.hasIcon {
+    justify-self: right;
+}
+
+.hasIcon:hover {
+    background: #dedede;
 }

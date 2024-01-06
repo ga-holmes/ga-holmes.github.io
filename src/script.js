@@ -11,7 +11,7 @@ function navScroll(e) {
     }
 
     if (icons === null || scrollPos / window.screen.height >= icons.offsetTop / window.screen.height) {
-        nav.style.display = 'block'
+        nav.style.display = 'flex'
     }
 
 }

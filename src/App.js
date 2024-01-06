@@ -27,7 +27,7 @@ function App() {
     <div>
 
         <div id="nav">
-          <Nav linksList={home.icons} style={{position: 'fixed', display: 'block'}}/>
+          <Nav linksList={home.icons} style={{position: 'fixed', display: 'flex'}}/>
         </div>
 
         <Routes>

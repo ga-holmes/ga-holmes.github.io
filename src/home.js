@@ -112,21 +112,6 @@ const home = {
         },
         {
             icon: "",
-            text: "code",
-            linkTo: "/#code"
-        },
-        {
-            icon: "",
-            text: "experience",
-            linkTo: "/#experience"
-        },
-        {
-            icon: "",
-            text: "projects",
-            linkTo: "/#projects"
-        },
-        {
-            icon: "",
             text: "gallery",
             linkTo: "/gallery"
         }
