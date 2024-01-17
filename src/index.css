@@ -68,6 +68,15 @@ body {
     height: 50vh;
 }
 
+.infoIcon{
+    display: block;
+    position: fixed;
+    right: 0;
+    padding: 0.2%;
+    opacity: 60%;
+    z-index: 11;
+}
+
 /* reformat for mobile */
 @media only screen and (max-device-width: 1024px) {
 

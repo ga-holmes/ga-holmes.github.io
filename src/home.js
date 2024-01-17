@@ -1,3 +1,5 @@
+import React, { Component } from 'react';
+
 // List of elements to be rendered on the home page
 // Serves as a single location to store text & other information that will be used by the site - essentially a makeshift static database in concept
 const home = {

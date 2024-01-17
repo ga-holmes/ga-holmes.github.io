@@ -1,3 +1,7 @@
+import React, { Component } from 'react';
+
+import { AiTwotoneInfoCircle } from "react-icons/ai";
+
 import { useEffect } from "react";
 
 import MainPage from "./pages/MainPage";
@@ -28,6 +32,10 @@ function App() {
 
         <div id="nav">
           <Nav linksList={home.icons} style={{position: 'fixed', display: 'flex'}}/>
+        </div>
+
+        <div id="info" className="infoIcon">
+          <AiTwotoneInfoCircle size={50}/>
         </div>
 
         <Routes>
