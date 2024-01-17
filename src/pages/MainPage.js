@@ -24,6 +24,11 @@ const MainPage = () => {
                 <Nav linksList={home.icons} style={{display: 'flex'}}/>
             </div>
 
+
+            <div className="bck" style={{ backgroundImage: `url(${backImage2})` }}>
+                <FormatContainer elements={home.projectsElements}/>
+            </div>
+
         </div>
     );
 }
