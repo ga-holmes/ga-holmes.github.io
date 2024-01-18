@@ -68,12 +68,40 @@ body {
     height: 50vh;
 }
 
-.infoIcon{
+.infoIcon {
     display: block;
     position: fixed;
     right: 0;
     opacity: 60%;
     z-index: 11;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.infoHover {
+    opacity: 20%;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.popupDiv{
+    position: fixed;
+    display: none;
+    margin-left: 80%;
+    margin-right: 2%;
+    margin-top: 2%;
+    text-align: right;
+    background-color: rgba(240, 248, 255, 0.712);
+    z-index: 10;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 3%;
+}
+
+.popupDiv a{
+    color: blue;
 }
 
 /* reformat for mobile */

@@ -10,7 +10,8 @@ import NoPage from "./pages/NoPage";
 
 import { Route, Routes } from 'react-router-dom';
 
-import navScroll from "./script";
+import navScroll from "./scripts/navScroll";
+import iconHover from "./scripts/iconHover";
 
 import { useLocation } from "react-router-dom";
 
@@ -25,6 +26,10 @@ function App() {
   useEffect(() => {
     navScroll()
   }, [location])
+
+  useEffect(() => {
+    iconHover()
+  }, [location])
   
 
   return (
@@ -36,6 +41,10 @@ function App() {
 
         <div id="info" className="infoIcon">
           <AiTwotoneInfoCircle size={50}/>
+        </div>
+
+        <div id="infoDiv" className='popupDiv'>
+          <p>This website is built from scratch using the React web framework, JavaScript, HTML, and CSS. All the code is available on my <a href='https://github.com/ga-holmes/ga-holmes.github.io'>github</a>. I'll be putting any interesting things I make or do on here, feel free to explore!</p>
         </div>
 
         <Routes>
