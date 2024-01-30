@@ -17,6 +17,10 @@
 
 }
 
+.container a {
+    color: inherit;
+}
+
 .container a:hover {
     text-decoration: none;
 }

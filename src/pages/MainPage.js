@@ -26,7 +26,7 @@ const MainPage = () => {
 
 
             <div className="bck" style={{ backgroundImage: `url(${backImage2})` }}>
-                <FormatContainer elements={home.projectsElements }/>
+                <FormatContainer elements={home.homeElements }/>
             </div>
 
         </div>

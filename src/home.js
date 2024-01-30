@@ -7,18 +7,26 @@ const home = {
     homeElements: [
     
         <div key={1}>
-            <p>My name is Garrett, I'm a computer science student at the University of Guelph in Ontario, Canada 
-                also working towards a minor in GIS & Environmental Analysis. 
-                <br />
-                <br />
-                I have experience as an outdoor trip leader & river guide in the wilderness areas of Ontario,
-                and as an executive member of the UoGuelph Outdoors Club.
-                <br />
-                In programming, I have worked with all kinds of software from web apps to deep learning & computer vision interfaces.
+            <p>Garrett Holmes is a programmer and graduate of the University of Guelph school of computer science.
+                <br/><br/> 
+                With over 5 years of experience in software development using python, C, JavaScript and more, 
+                I have worked on a variety of projects involving web development, systems programming, 
+                and computer vision for <a href='https://github.com/ga-holmes/cows_drinking'>Precision Livestock Farming</a>.
+                <br/>
+                I have worked extensively in GIS applications like QGIS & ArcGIS for environmental analysis including 
+                Moose Habitat suitability in the <a href='https://geg.uoguelph.ca/sites/default/files/GEOG4480-W23_Group02.pdf'>Missinaibi forest</a>.
+                <br /><br />
+                I am passionate about the outdoors and Canada's natural spaces. I have worked as a river guide and outdoor educator 
+                for <a href='https://www.kandalore.com/'>Kandalore</a>, as an instructor at the <a href='https://paddlerco-op.ca/'>Paddler Coop</a>, 
+                and have over 100 days of experience on wilderness canoe trips & back-country camping.
                 <br/>
                 <br />
-                I also have strong interests in visual arts & have skills in writing music, video production, photography, digital art, & more. 
-                This website exists to catalogue my work & as a place to test my skills & experiment.
+                As a visual arist I have worked as a composer and cinematographer on independent film projects 
+                including an upcoming feature film, some of which are showcased here.
+                Some of my photography and digital art is viewable on this website in a reduced-resolution format.
+                <br/><br/>
+                Please feel free to reach out to me at <a href='garrett.a.holmes01@gmail.com'>@garrett.a.holmes01@gmail.com</a>,
+                or on <a href='https://www.linkedin.com/in/garrett-holmes-b4a219225/'>LinkedIn</a>.
             </p>
         </div>
         ,
