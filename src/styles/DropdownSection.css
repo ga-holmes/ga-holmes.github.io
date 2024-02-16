@@ -1,0 +1,14 @@
+
+.dropdownHeader {
+    background-color: #eeec;
+    padding-left: 2%;
+}
+
+.dropdownHeader:hover {
+    cursor: pointer;
+}
+
+.dropdownAll {
+    background-color: #eeec;
+    border-radius: 2%;
+}

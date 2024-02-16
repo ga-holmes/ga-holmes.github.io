@@ -6,6 +6,7 @@ import backImage2 from "../images/back2.jpg"
 import backImage3 from "../images/self.jpg"
 
 import FormatContainer from "../components/FormatContainer";
+import DropdownSection from '../components/DropdownSection.js';
 
 import "../styles/MainPage.css";
 
@@ -26,8 +27,17 @@ const MainPage = () => {
 
 
             <div className="bck" style={{ backgroundImage: `url(${backImage2})` }}>
-                <FormatContainer elements={home.homeElements }/>
+                <div className='content'>
+
+                    <FormatContainer elements={home.homeElements}/>
+
+                    <DropdownSection name="Projects">
+                        <FormatContainer elements={home.projectsElements}/>
+                    </DropdownSection>
+
+                </div>
             </div>
+
 
         </div>
     );

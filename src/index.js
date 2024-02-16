@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import navScroll from './script'
+import navScroll from "./scripts/navScroll";
 
 import {BrowserRouter as Router} from 'react-router-dom'
 
