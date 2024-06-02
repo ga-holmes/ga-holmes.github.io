@@ -31,13 +31,19 @@ const MainPage = () => {
 
                     <FormatContainer elements={home.homeElements}/>
 
-                    <DropdownSection name="Projects">
-                        <FormatContainer elements={home.projectsElements}/>
-                    </DropdownSection>
+                    {/* <DropdownSection name="Projects">
+                        <FormatContainer elements={home.projectsElements} />
+                    </DropdownSection> */}
 
                 </div>
-            </div>
 
+                {/* <div className='gameContainer'>
+
+                    <canvas id="game" width="720" height="480"/>
+
+                </div> */}
+
+            </div>
 
         </div>
     );

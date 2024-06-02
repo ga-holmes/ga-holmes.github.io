@@ -12,6 +12,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import navScroll from "./scripts/navScroll";
 import iconHover from "./scripts/iconHover";
+// import game from "./scripts/game";
 
 import { useLocation } from "react-router-dom";
 
@@ -30,6 +31,10 @@ function App() {
   useEffect(() => {
     iconHover()
   }, [location])
+
+  // useEffect(() => {
+  //   game()
+  // }, [location])
   
 
   return (

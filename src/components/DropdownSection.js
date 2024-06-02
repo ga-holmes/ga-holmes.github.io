@@ -7,6 +7,7 @@ const DropdownSection = ( props ) => {
     const [ display, setDisplay ] = useState( 'none' );
 
     function handleClick() {
+        
         if ( display == 'none' ) {
             setDisplay( 'block' );
         } else {
@@ -24,7 +25,7 @@ const DropdownSection = ( props ) => {
 
             </div>
 
-            <div style={{display:display}}>
+            <div className="dropdownBody" style={{display:display}}>
                 {props.children}
             </div>
 

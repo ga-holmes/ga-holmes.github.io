@@ -47,3 +47,20 @@
     color: rgba(255, 98, 98, 0.568);
     cursor: crosshair;
 } 
+
+.gameContainer {
+    text-align: center;
+    padding: 10%;
+}
+
+#game {
+    display: inline;
+    background-color: white;
+}
+
+#guy {
+    display: inline;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}
