@@ -13,6 +13,7 @@ import "../styles/MainPage.css";
 import home from "../home.js"
 
 import Nav from '../components/Nav';
+import ActionContainer from '../components/ActionContainer';
 
 const MainPage = () => {
 
@@ -31,9 +32,16 @@ const MainPage = () => {
 
                     <FormatContainer elements={home.homeElements}/>
 
-                    <DropdownSection name="Projects">
+                    <br/>
+
+                    <h1 className='sectionTitle'>P R O J E C T S</h1>
+                    
+                    <ActionContainer elements={home.projectsElements}  columns='1fr 1fr 1fr' spacing='4em'/>
+
+
+                    {/* <DropdownSection name="Projects">
                         <FormatContainer elements={home.projectsElements}/>
-                    </DropdownSection>
+                    </DropdownSection> */}
 
                 </div>
             </div>

@@ -11,7 +11,7 @@ const home = {
                 <br/><br/> 
                 With over 5 years of experience in software development using python, C, JavaScript and more, 
                 I have worked on a variety of projects involving web development, systems programming, 
-                and computer vision for <a href='https://github.com/ga-holmes/cows_drinking'>Precision Livestock Farming</a>.
+                and computer vision for <a href='https://github.com/ga-holmes/cows_drinking'>Precision Livestock Farming </a>as part of the <a href='https://csl.uwaterloo.ca/'>Collaborative Systems Lab</a>.
                 <br/>
                 I have worked extensively in GIS applications like QGIS & ArcGIS for environmental analysis including 
                 Moose Habitat suitability in the <a href='https://geg.uoguelph.ca/sites/default/files/GEOG4480-W23_Group02.pdf'>Missinaibi forest</a>.
@@ -84,7 +84,7 @@ const home = {
         ,
     
     ],
-    projectsElements: [
+    projectsElementsOld: [
         <div>
             <h4>Composer - <a href="https://letterboxd.com/film/sole-of-a-salesman/">'Sole of a Salesman' by Lliam Bittle</a></h4>
             <iframe className="video" src="https://www.youtube.com/embed/OOtX7AmzdAA" title="Sole Of A Salesman" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
