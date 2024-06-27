@@ -108,7 +108,7 @@ const home = {
         {
             icon: process.env.PUBLIC_URL + "/media/linkedin.png",
             text: "",
-            linkTo: "https://www.linkedin.com/in/garrett-holmes-b4a219225/"
+            linkTo: "https://www.linkedin.com/in/garrett-a-holmes/"
         },
         {
             icon: process.env.PUBLIC_URL + "/media/resume.png",

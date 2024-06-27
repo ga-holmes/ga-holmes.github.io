@@ -8,6 +8,10 @@ import navScroll from "./scripts/navScroll";
 
 import {BrowserRouter as Router} from 'react-router-dom'
 
+// fonts
+import "typeface-roboto"
+import "typeface-source-sans-pro"
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
