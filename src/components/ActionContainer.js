@@ -34,7 +34,7 @@ const ActionContainer = ({ columns, spacing }) => {
             }
         }
         console.log(cols);
-    }, [columns, icons.length]);
+    }, [cols, columns, icons]);
 
     return (
         <div className="actionWrapper" style={{ gridTemplateColumns: cols, gridGap: spacing }}>
@@ -63,7 +63,7 @@ const ActionItem = ({ icon, index }) => {
         if (isMobile) {
             setDelay(`${index * 0.3}s`); // Delay each item by 0.2s times its index for mobile
         }
-    });
+    }, [index]);
 
     return (
         <div ref={ref} className={`actionItem ${inView ? 'animate' : ''}`} style={{ transitionDelay: delay }} title={icon.label}>

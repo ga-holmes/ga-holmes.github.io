@@ -25,7 +25,15 @@ const Gallery = () => {
               "fall.jpg",
               "sil.JPG",
               "uke.jpg",
-              "waves.jpg"
+              "waves.jpg",
+              "prater2.jpg",
+              "prater1.jpg",
+              "mountainaus.jpg",
+              "louise.JPG",
+              "grass.jpg",
+              "dam.jpg",
+              "beach.jpg",
+              "bars.jpg"
   ];
 
   files = shuffleArray(files);
