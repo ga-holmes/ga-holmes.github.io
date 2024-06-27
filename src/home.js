@@ -11,13 +11,13 @@ const home = {
                 <br/><br/> 
                 With over 5 years of experience in software development using python, C, JavaScript and more, 
                 I have worked on a variety of projects involving web development, systems programming, 
-                and computer vision for <a href='https://github.com/ga-holmes/cows_drinking'>Precision Livestock Farming </a>as part of the <a href='https://csl.uwaterloo.ca/'>Collaborative Systems Lab</a>.
+                and computer vision for <a href='https://github.com/ga-holmes/cows_drinking' target="_blank" rel="noopener noreferrer">Precision Livestock Farming </a>as part of the <a href='https://csl.uwaterloo.ca/' target="_blank" rel="noopener noreferrer">Collaborative Systems Lab</a>.
                 <br/>
                 I have worked extensively in GIS applications like QGIS & ArcGIS for environmental analysis including 
-                Moose Habitat suitability in the <a href='https://geg.uoguelph.ca/sites/default/files/GEOG4480-W23_Group02.pdf'>Missinaibi forest</a>.
+                Moose Habitat suitability in the <a href='https://geg.uoguelph.ca/sites/default/files/GEOG4480-W23_Group02.pdf' target="_blank" rel="noopener noreferrer">Missinaibi forest</a>.
                 <br /><br />
                 I am passionate about the outdoors and Canada's natural spaces. I have worked as a river guide and outdoor educator 
-                for <a href='https://www.kandalore.com/'>Kandalore</a>, as an instructor at the <a href='https://paddlerco-op.ca/'>Paddler Coop</a>, 
+                for <a href='https://www.kandalore.com/' target="_blank" rel="noopener noreferrer">Kandalore</a>, as an instructor at the <a href='https://paddlerco-op.ca/' target="_blank" rel="noopener noreferrer">Paddler Coop</a>, 
                 and have over 100 days of experience on wilderness canoe trips & back-country camping.
                 <br/>
                 <br />
@@ -25,8 +25,8 @@ const home = {
                 including an upcoming feature film, some of which are showcased here.
                 Some of my photography and digital art is viewable on this website in a reduced-resolution format.
                 <br/><br/>
-                Please feel free to reach out to me at <a href='garrett.a.holmes01@gmail.com'>@garrett.a.holmes01@gmail.com</a>,
-                or on <a href='https://www.linkedin.com/in/garrett-holmes-b4a219225/'>LinkedIn</a>.
+                Please feel free to reach out to me at <a href='mailto:garrett.a.holmes01@gmail.com' target="_blank" rel="noopener noreferrer">@garrett.a.holmes01@gmail.com</a>,
+                or on <a href='https://www.linkedin.com/in/garrett-holmes-b4a219225/' target="_blank" rel="noopener noreferrer">LinkedIn</a>.
             </p>
         </div>
         ,

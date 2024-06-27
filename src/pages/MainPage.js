@@ -36,7 +36,7 @@ const MainPage = () => {
 
                     <h1 className='sectionTitle'>P R O J E C T S</h1>
                     
-                    <ActionContainer elements={home.projectsElements}  columns='1fr 1fr 1fr' spacing='4em'/>
+                    <ActionContainer elements={home.projectsElements}/>
 
 
                     {/* <DropdownSection name="Projects">
