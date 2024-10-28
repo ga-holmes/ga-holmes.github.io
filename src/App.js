@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import MainPage from "./pages/MainPage";
 import Gallery from "./pages/Gallery";
 import NoPage from "./pages/NoPage";
+import Map from './pages/Map';
 
 import { Route, Routes } from 'react-router-dom';
 
@@ -57,6 +58,7 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/*" element={<NoPage />} />
           <Route path="/gallery" element={<Gallery/>} />
+          <Route path="/map" element={<Map/>} />
 
         </Routes>
 

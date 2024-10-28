@@ -124,6 +124,11 @@ const home = {
             icon: "",
             text: "gallery",
             linkTo: "/gallery"
+        },
+        {
+            icon: "",
+            text: "map",
+            linkTo: "/map"
         }
     ]
 }
