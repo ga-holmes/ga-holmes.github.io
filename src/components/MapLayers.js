@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 // Import the necessary components from OpenLayers
 import VectorLayer from 'ol/layer/Vector'
