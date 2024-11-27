@@ -1,0 +1,145 @@
+.actionWrapper {
+    display: grid;
+    color: black;
+
+    align-items: center;
+
+    z-index: 0;
+}
+
+.actionItem {
+    position: relative;
+    display: flex;
+
+    background: #698C82ee;
+    /* opacity: 0.8; */
+    padding: 1em;
+
+    border-radius: 2%;
+    aspect-ratio: 1 / 1;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.actionIcon {
+    font-size: 2rem;
+}
+
+.backgroundSlide {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    /* Initially off-screen to the right */
+    width: 100%;
+    height: 100%;
+    background-color: #b1c9c1dd;
+    /* Off-white background */
+    transition: right 0.3s ease, opacity 0.3s ease;
+    /* Transition for slide-in effect */
+    pointer-events: none;
+    /* Allow hover events to pass through */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.actionItem:hover {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 5px 1px #ddd;
+}
+
+.actionItem:hover .backgroundSlide {
+    right: 0;
+    /* Slide in from the right */
+    opacity: 1;
+    /* Fade in effect */
+}
+
+.textFade {
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.7s ease;
+    /* Transition for fade-in effect */
+
+    /* text stuff */
+    margin: 10%;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.actionItem:hover .textFade {
+    opacity: 0.6;
+    /* Fade in text when hovered */
+}
+
+.actionLink {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+}
+
+.actionLinkText {
+    transition: opacity 0.7s ease;
+    opacity: 0;
+}
+
+/* reformat for mobile */
+@media only screen and (max-device-width: 1024px) {
+
+    .actionWrapper {
+        display: block;
+    }
+
+    .actionItem {
+        margin-bottom: 5%;
+        border-radius: 0%;
+    }
+
+    .actionItem.animate .backgroundSlide {
+        right: 0;
+        /* Slide in from the right */
+        opacity: 1;
+        /* Fade in effect */
+    }
+
+    .actionItem.animate .textFade {
+        opacity: 0.6;
+        /* Fade in text when hovered */
+        font-size: medium;
+    }
+
+    .actionLink {
+        display: flex;
+        position: absolute;
+        background-color: #698c82b6;
+        width: 100%;
+        height: 18%;
+        top: 78%;
+        left: 0%;
+        justify-self: center;
+        text-align: center;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .actionItem.animate .actionLinkText {
+        display: flex;
+        align-items: center;
+        color: #ddd;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        opacity: 0.8;
+    }
+
+}

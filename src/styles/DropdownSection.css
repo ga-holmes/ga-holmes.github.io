@@ -1,0 +1,25 @@
+
+.dropdownHeader {
+    text-align: center;
+    font-family: roboto;
+    font-weight: 300;
+    padding: 1px;
+}
+
+.dropdownHeader:hover {
+    cursor: pointer;
+}
+
+.dropdownAll {
+    background-color: #eeec;
+    margin-top: 2%;
+}
+
+.dropdownBody {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    background-color: rgba(0, 0, 0, 0.185);
+    overflow: hidden;
+}

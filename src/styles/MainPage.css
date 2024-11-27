@@ -1,0 +1,66 @@
+
+.bck {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;   
+    overflow-x: hidden;   
+    
+    filter: drop-shadow(0 5px 5px);
+
+}
+
+.projectsclass {
+    color: #ddd;
+    margin: 5%;
+}
+
+.topBanner {
+    background-color: #33997c3f;
+    overflow-x: hidden;
+    text-justify: left;
+    /* font-style: oblique; */
+    display: flex;
+    align-items: center;
+
+    color: rgb(63, 63, 63);
+
+    /* line-height: 100vh; */
+
+    /* font-family:'Courier New', Courier, monospace; */
+    /* font-size: 10vw; */
+    
+    top: 0;
+    width: 100%;
+    height: 94vh;
+
+    background-size: cover;
+
+}
+
+.name {
+    color: rgba(0, 0, 255, 0.445);
+}
+
+.name:hover {
+    color: rgba(255, 98, 98, 0.568);
+    cursor: crosshair;
+} 
+
+.gameContainer {
+    text-align: center;
+    padding: 10%;
+}
+
+#game {
+    display: inline;
+    background-color: white;
+}
+
+#guy {
+    display: inline;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}

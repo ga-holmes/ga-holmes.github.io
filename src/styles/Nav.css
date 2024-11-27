@@ -1,0 +1,57 @@
+.icon {
+    height: 50px;
+}
+
+.container {
+
+    background-color: #698C82;
+
+    filter: drop-shadow(-1px 4px 1px);
+    overflow: hidden;
+    
+    z-index: 10;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-weight: 200;
+}
+
+.container a {
+    color: inherit;
+}
+
+.container a:hover {
+    text-decoration: none;
+}
+
+.noIcon {
+    font-size: x-large;
+    margin-left: 1%;
+}
+
+.noIcon:hover {
+    color: #dedede;
+}
+
+.hasIcon {
+    justify-self: right;
+}
+
+.hasIcon:hover {
+    background: #dedede;
+}
+
+/* reformat for mobile */
+@media only screen and (max-device-width: 1024px) {
+
+    .noIcon {
+        font-size: medium;
+    }
+
+    .icon {
+        height: 40px;
+    }
+
+}
