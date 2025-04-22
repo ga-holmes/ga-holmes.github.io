@@ -1,18 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ee07eb6.css",
-    "main.js": "/static/js/main.0c990fbe.js",
-    "static/js/453.a57aa845.chunk.js": "/static/js/453.a57aa845.chunk.js",
-    "static/media/back2.jpg": "/static/media/back2.ced851e1184142c34755.jpg",
-    "static/media/self.jpg": "/static/media/self.dc13d4fa0a47fb295d1a.jpg",
-    "static/media/back1.JPG": "/static/media/back1.182a47325195628ff111.JPG",
+    "main.css": "/static/css/main.0810691e.chunk.css",
+    "main.js": "/static/js/main.8179d52c.chunk.js",
+    "main.js.map": "/static/js/main.8179d52c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9fe47a74.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9fe47a74.js.map",
+    "static/css/2.ad987bd1.chunk.css": "/static/css/2.ad987bd1.chunk.css",
+    "static/js/2.699d212d.chunk.js": "/static/js/2.699d212d.chunk.js",
+    "static/js/2.699d212d.chunk.js.map": "/static/js/2.699d212d.chunk.js.map",
+    "static/js/3.b650e7a2.chunk.js": "/static/js/3.b650e7a2.chunk.js",
+    "static/js/3.b650e7a2.chunk.js.map": "/static/js/3.b650e7a2.chunk.js.map",
     "index.html": "/index.html",
-    "main.6ee07eb6.css.map": "/static/css/main.6ee07eb6.css.map",
-    "main.0c990fbe.js.map": "/static/js/main.0c990fbe.js.map",
-    "453.a57aa845.chunk.js.map": "/static/js/453.a57aa845.chunk.js.map"
+    "precache-manifest.4b96f79a86f80a15ddf577213b814f6d.js": "/precache-manifest.4b96f79a86f80a15ddf577213b814f6d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.ad987bd1.chunk.css.map": "/static/css/2.ad987bd1.chunk.css.map",
+    "static/css/main.0810691e.chunk.css.map": "/static/css/main.0810691e.chunk.css.map",
+    "static/js/2.699d212d.chunk.js.LICENSE.txt": "/static/js/2.699d212d.chunk.js.LICENSE.txt",
+    "static/media/back1.JPG": "/static/media/back1.8c27f790.JPG",
+    "static/media/back2.jpg": "/static/media/back2.47bdf42b.jpg",
+    "static/media/index.cjs": "/static/media/index.ce7c23d2.cjs",
+    "static/media/index.css": "/static/media/source-sans-pro-900italic.ce525db6.woff2",
+    "static/media/self.jpg": "/static/media/self.d9e99e4a.jpg"
   },
   "entrypoints": [
-    "static/css/main.6ee07eb6.css",
-    "static/js/main.0c990fbe.js"
+    "static/js/runtime-main.9fe47a74.js",
+    "static/css/2.ad987bd1.chunk.css",
+    "static/js/2.699d212d.chunk.js",
+    "static/css/main.0810691e.chunk.css",
+    "static/js/main.8179d52c.chunk.js"
   ]
 }
